@@ -99,7 +99,7 @@ export default function Home() {
                   variants={itemVariants}
                   className="text-lg text-slate-600 dark:text-slate-400 font-medium"
                 >
-                  Hi, I'm
+                  Hi, I am
                 </motion.p>
                 <motion.h1
                   variants={itemVariants}
