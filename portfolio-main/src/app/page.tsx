@@ -11,11 +11,16 @@ export default function Home() {
     // Scroll to top immediately on component mount
     window.scrollTo(0, 0);
     
-    // Also handle any hash in the URL
-    if (window.location.hash) {
-      // Clear the hash but don't scroll
-      history.replaceState(null, null, window.location.pathname);
-    }
+    // // Also handle any hash in the URL
+    // if (window.location.hash) {
+    //   // Clear the hash but don't scroll
+    //   history.replaceState(null, null, window.location.pathname);
+    // }
+
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname);
+  }
+
   }, []);
 
   const containerVariants = {
